@@ -14,6 +14,7 @@ class ImcViewController: UIViewController {
     var weight:Float = 0.0
     var age = 0
     var resultImc:Float = 0.0
+    var chooseSex: String = ""
 
     
  
@@ -22,6 +23,7 @@ class ImcViewController: UIViewController {
     @IBOutlet weak var ageLabel: UITextField!
     @IBOutlet weak var choose: UISegmentedControl!
     
+    @IBOutlet weak var bntChoose: UISegmentedControl!
     
     @IBOutlet weak var bnt: UIButton!
     
@@ -37,7 +39,18 @@ class ImcViewController: UIViewController {
      
     }
     
-
+    @IBAction func bntchoose() {
+        
+        switch bntChoose.selectedSegmentIndex {
+            case 0:
+                chooseSex = "women"
+            case 1:
+                chooseSex = "men"
+            default:
+                chooseSex = "women"
+        }
+    }
+    
     @IBAction func imcButtom() {
         
         size = Float(sizeLabel.text!)!
@@ -65,6 +78,8 @@ class ImcViewController: UIViewController {
                 let destination = segue.destination as? ResultImcViewController
             {
                 destination.imc = resultImc
+                destination.choose =  chooseSex
+                
             }
             
         }

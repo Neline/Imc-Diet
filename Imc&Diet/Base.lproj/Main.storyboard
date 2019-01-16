@@ -114,6 +114,9 @@
                                     <segment title="Homme"/>
                                 </segments>
                                 <color key="tintColor" red="0.38855133889999999" green="0.44183883569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="bntchoose" destination="6kO-lH-yhN" eventType="valueChanged" id="puY-3K-xkB"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -125,6 +128,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="ACP-Ot-dBG" id="0Xn-Hc-hag"/>
                         <outlet property="bnt" destination="qXK-Zn-2MU" id="kc5-kt-FKa"/>
+                        <outlet property="bntChoose" destination="Ztl-8B-BuP" id="jaM-Cs-1fA"/>
                         <outlet property="sizeLabel" destination="UcT-he-Qgz" id="FrL-ky-rXt"/>
                         <outlet property="weightLabel" destination="ywf-Ie-DvO" id="g4w-Kk-9ZJ"/>
                     </connections>
@@ -148,16 +152,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neA-Wy-m0r">
                                 <rect key="frame" x="0.0" y="330" width="414" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.38855133889999999" green="0.44183883569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.38855133889999999" green="0.44183883569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJz-e7-b3L">
-                                <rect key="frame" x="72" y="421" width="271" height="375"/>
+                                <rect key="frame" x="90" y="429" width="235" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38855133889999999" green="0.44183883569999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="IEo-aY-Zpk"/>
                     </view>
                     <connections>
