@@ -14,6 +14,7 @@
 		840C5E2E21E74B7F000F2F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C5E2C21E74B7F000F2F31 /* LaunchScreen.storyboard */; };
 		840C5E3A21E8996C000F2F31 /* ImcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C5E3921E8996C000F2F31 /* ImcViewController.swift */; };
 		847DEBA021E8C5BC0001A76D /* ResultImcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DEB9F21E8C5BC0001A76D /* ResultImcViewController.swift */; };
+		8494742B21EF71F000350FBC /* HistoriqueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494742A21EF71F000350FBC /* HistoriqueTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		840C5E2F21E74B7F000F2F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840C5E3921E8996C000F2F31 /* ImcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImcViewController.swift; sourceTree = "<group>"; };
 		847DEB9F21E8C5BC0001A76D /* ResultImcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultImcViewController.swift; sourceTree = "<group>"; };
+		8494742A21EF71F000350FBC /* HistoriqueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,25 @@
 		840C5E2221E74B7F000F2F31 /* Imc&Diet */ = {
 			isa = PBXGroup;
 			children = (
+				8494742821EF6F2A00350FBC /* ViewController */,
 				840C5E2321E74B7F000F2F31 /* AppDelegate.swift */,
 				840C5E2521E74B7F000F2F31 /* ViewController.swift */,
 				840C5E2721E74B7F000F2F31 /* Main.storyboard */,
 				840C5E2A21E74B7F000F2F31 /* Assets.xcassets */,
 				840C5E2C21E74B7F000F2F31 /* LaunchScreen.storyboard */,
 				840C5E2F21E74B7F000F2F31 /* Info.plist */,
-				840C5E3921E8996C000F2F31 /* ImcViewController.swift */,
-				847DEB9F21E8C5BC0001A76D /* ResultImcViewController.swift */,
+				8494742A21EF71F000350FBC /* HistoriqueTableViewController.swift */,
 			);
 			path = "Imc&Diet";
+			sourceTree = "<group>";
+		};
+		8494742821EF6F2A00350FBC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				847DEB9F21E8C5BC0001A76D /* ResultImcViewController.swift */,
+				840C5E3921E8996C000F2F31 /* ImcViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				840C5E2421E74B7F000F2F31 /* AppDelegate.swift in Sources */,
 				840C5E3A21E8996C000F2F31 /* ImcViewController.swift in Sources */,
 				847DEBA021E8C5BC0001A76D /* ResultImcViewController.swift in Sources */,
+				8494742B21EF71F000350FBC /* HistoriqueTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

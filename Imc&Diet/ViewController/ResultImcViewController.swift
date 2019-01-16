@@ -12,15 +12,28 @@ import UIKit
 class ResultImcViewController: UIViewController {
     
     var imc = Float()
-    var choose: String = "women"
+    var choose: String = ""
     
     @IBOutlet weak var reponseLabel: UILabel!
     @IBOutlet weak var imgReponse: UIImageView!
+    @IBOutlet weak var bntProgram: UIButton!
+    @IBOutlet weak var bntReturn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bntProgram?.layer.cornerRadius=20
+        bntProgram?.clipsToBounds=true
+        bntReturn?.layer.cornerRadius=20
+        bntReturn?.clipsToBounds=true
+        
     }
+    
+    
+    
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -72,11 +85,12 @@ class ResultImcViewController: UIViewController {
                 alert = "Veuillez consulter un médecin"
                 img = "warning"
             }
+    
         
         reponseLabel.text = alert
         imgReponse.image = UIImage(named: img)
-        
       
     }
+    
 
 }

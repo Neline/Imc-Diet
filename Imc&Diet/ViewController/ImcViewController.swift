@@ -36,7 +36,7 @@ class ImcViewController: UIViewController {
         bnt?.layer.cornerRadius=25
         bnt?.clipsToBounds=true
 
-     
+
     }
     
     @IBAction func bntchoose() {
@@ -49,6 +49,8 @@ class ImcViewController: UIViewController {
             default:
                 chooseSex = "women"
         }
+        
+        print(chooseSex)
     }
     
     @IBAction func imcButtom() {
